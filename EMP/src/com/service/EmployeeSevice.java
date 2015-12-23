@@ -1,0 +1,21 @@
+package com.service;
+
+import java.util.List;
+
+import com.formbean.EmployeeForm;
+import com.master.pojo.State;
+import com.pojo.Employee;
+public interface EmployeeSevice {
+public boolean addEmpDetails(EmployeeForm userForm);
+public List<Employee> getAllRecords(String page);
+public List<Employee> employeeView(Employee employee);
+public Employee employeeViewDetails(Employee employee);
+public boolean employeeDelete(Employee employee);
+public EmployeeForm updateEmployee(Employee employee);
+
+public State getParentSateName(State state);
+public State getOfficeSateName(State state);
+
+
+public List<Employee> employeeDetailsWithJasper(Employee employee);
+}

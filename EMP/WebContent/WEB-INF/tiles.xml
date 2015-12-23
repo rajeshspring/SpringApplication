@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+
+<definition template="/WEB-INF/jsp/layout.jsp" name="base.definition">
+<put-attribute name="title" value=""/>
+<put-attribute name="header" value="/WEB-INF/jsp/header.jsp"/>
+<put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp"/>
+<put-attribute name="body" value=""/>
+<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp"/>
+</definition>
+
+<definition template="/WEB-INF/jsp/layout.jsp" name="base.definition1">
+<put-attribute name="title" value=""/>
+<put-attribute name="header" value="/WEB-INF/jsp/header.jsp"/>
+<put-attribute name="menu" value="/WEB-INF/jsp/menu1.jsp"/>
+<put-attribute name="body" value=""/>
+<put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp"/>
+</definition>
+
+<definition name="userlogin" extends="base.definition">
+<put-attribute name="title" value="Home "/>
+<put-attribute name="body" value="/WEB-INF/jsp/login.jsp"/>
+</definition>
+
+<definition name="login" extends="base.definition1">
+<put-attribute name="title" value="Home "/>
+<put-attribute name="body" value="/WEB-INF/jsp/success.jsp"/>
+</definition>
+	
+	
+	
+<definition name="loginfail" extends="base.definition1">
+<put-attribute name="title" value="Home "/>
+<put-attribute name="body" value="/WEB-INF/jsp/error.jsp"/>
+</definition>
+	
+	
+	
+<definition name="addemployee" extends="base.definition1">
+<put-attribute name="title" value="Home "/>
+<put-attribute name="body" value="/WEB-INF/jsp/employee/employee.jsp"/>
+</definition>
+	
+<definition name="manageEmployee" extends="base.definition1">
+<put-attribute name="title" value="Home "/>
+<put-attribute name="body" value="/WEB-INF/jsp/employee/employee.jsp"/>
+</definition>	
+
+
+<definition name="viewemployee" extends="base.definition1">
+<put-attribute name="title" value="Home "/>
+<put-attribute name="body" value="/WEB-INF/jsp/employee/viewemployee.jsp"/>
+</definition>	
+
+
+	
+<definition name="deleteEmployee" extends="base.definition1">
+<put-attribute name="title" value="Home "/>
+<put-attribute name="body" value="/WEB-INF/jsp/employee/deleteEmployee.jsp"/>
+</definition>	
+
+<definition name="deleteEmployeeByUser" extends="base.definition1">
+<put-attribute name="title" value="Home "/>
+<put-attribute name="body" value="/WEB-INF/jsp/employee/employee.jsp"/>
+</definition>		
+
+	
+	
+<definition name="updateEmployee" extends="base.definition1">
+<put-attribute name="title" value="Home "/>
+<put-attribute name="body" value="/WEB-INF/jsp/employee/employee.jsp"/>
+</definition>	
+
+
+<definition name="callDwr" extends="base.definition1">
+<put-attribute name="title" value="Home "/>
+<put-attribute name="body" value="/WEB-INF/jsp/employee/indexdwr.jsp"/>
+</definition>
+
+
+<!-- <definition name="employeeJasperPDFReport" extends="base.definition1">
+<put-attribute name="title" value="Home "/>
+<put-attribute name="body" value="/WEB-INF/jsp/employee/employee.jsp"/>
+</definition> -->
+
+<!--Manager Details -->	
+
+<definition name="managerDetails" extends="base.definition1">
+<put-attribute name="title" value="Home "/>
+<put-attribute name="body" value="/WEB-INF/jsp/manager/managerDetails.jsp"/>
+</definition>
+	
+</tiles-definitions>

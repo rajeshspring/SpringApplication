@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+ <bean id="employeeJasperpdf" class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView">
+ <property name="url" value="/WEB-INF/reports/employeeJasperPDFReport.jrxml"/> 
+ </bean>
+ <bean id="employeeJasperxls" class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView">
+ <property name="url" value="/WEB-INF/reports/employeeJasperPDFReport.jrxml"/> 
+ </bean> 
+ 
+ <bean id="employeeJaspercsv" class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"> 
+   <property name="url" value="/WEB-INF/reports/employeeJasperPDFReport.jrxml" /> 
+   </bean>
+ 
+ 
+  <!-- <bean id="byElectionDueExlReport" class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView">
+   <property name="url" value="/WEB-INF/reports/report2.jrxml"/> 
+   </bean> 
+  <bean id="electedMemberPdfReport" class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"> 
+   <property name="url" value="/WEB-INF/reports/electedMemberReport.jrxml"/> 
+   </bean>
+  <bean id="electedMemberExlReport" class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"> 
+   <property name="url" value="/WEB-INF/reports/electedMemberReport.jrxml"/> 
+   </bean>
+ <bean id="certificatePdfReport" class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"> 
+   <property name="url" value="/WEB-INF/reports/IssueCertificateReport.jrxml"/> 
+   </bean>
+  <bean id="certificateExlReport" class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"> 
+   <property name="url" value="/WEB-INF/reports/IssueCertificateReport.jrxml"/> 
+   </bean>
+
+ <bean id="panchayatLiteracyPdfReport" class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView">
+ <property name="url" value="/WEB-INF/reports/panchayatLiteracy.jrxml"/> 
+ </bean>
+ 
+<bean id="panchayatLiteracyPdfReportEducation" class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView">
+ <property name="url" value="/WEB-INF/reports/panchayatLiteracyeducation.jrxml"/> 
+ </bean>
+ <bean id="panchayatLiteracyXlsReport" class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView">
+ <property name="url" value="/WEB-INF/reports/panchayatLiteracy.jrxml"/> 
+ </bean>
+  <bean id="panchayatLiteracyXlsReportEducation" class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView">
+ <property name="url" value="/WEB-INF/reports/panchayatLiteracyeducation.jrxml"/> 
+ </bean>
+  -->
+ 
+ 
+ 
+ 
+<!--  //add by pragya -->
+
+<!-- <bean id="panchayatHeadByWomanPdfReport" class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView">
+ <property name="url" value="/WEB-INF/reports/PanchayatHeadByWomanReport.jrxml"/> 
+ </bean>
+  <bean id="panchayatHeadByWomanXlsreport" class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView">
+   <property name="url" value="/WEB-INF/reports/PanchayatHeadByWomanReport.jrxml"/> 
+   </bean> 
+  <bean id="panchayatHeadByWomanHtmlReport" class="org.springframework.web.servlet.view.jasperreports.JasperReportsHtmlView"> 
+   <property name="url" value="/WEB-INF/reports/PanchayatHeadByWomanReport.jrxml"/> 
+   </bean>
+  <bean id="panchayatHeadByWomanCsvReport" class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"> 
+   <property name="url" value="/WEB-INF/reports/PanchayatHeadByWomanReport.jrxml" /> 
+   </bean>
+ -->
+
+
+
+
+<!-- 
+ <bean id="viewfamilyOutinMigrationreportpdf" class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"> 
+   <property name="url" value="/WEB-INF/reports/familymigrationreportregister.jrxml" /> 
+   </bean>
+
+<bean id="viewfamilyOutinMigrationreportxls" class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"> 
+   <property name="url" value="/WEB-INF/reports/familymigrationreportregister.jrxml" /> 
+   </bean>
+
+
+<bean id="viewfamilyOutinMigrationreportcsv" class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"> 
+   <property name="url" value="/WEB-INF/reports/familymigrationreportregister.jrxml" /> 
+   </bean>
+
+ <bean id="viewfamilyregisterreportpdf" class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"> 
+   <property name="url" value="/WEB-INF/reports/familyregister.jrxml" /> 
+   </bean>
+
+<bean id="viewfamilyregisterreportxls" class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"> 
+   <property name="url" value="/WEB-INF/reports/familyregister.jrxml" /> 
+   </bean>
+
+<bean id="viewfamilyregisterreportcsv" class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"> 
+   <property name="url" value="/WEB-INF/reports/familyregister.jrxml" /> 
+   </bean>
+  
+ <bean id="viewfamilyandfamilyregisterreportpdf" class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"> 
+   <property name="url" value="/WEB-INF/reports/familyandfamilyregister.jrxml" /> 
+   </bean>
+ 
+ <bean id="viewfamilyandfamilyregisterreportxls" class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"> 
+   <property name="url" value="/WEB-INF/reports/familyandfamilyregister.jrxml" /> 
+   </bean>
+   
+   <bean id="viewfamilyandfamilyregisterreportcsv" class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"> 
+   <property name="url" value="/WEB-INF/reports/familyandfamilyregister.jrxml" /> 
+   </bean>
+   
+    -->
+   
+   
+   
+   
+    <!-- standing committee report -->
+   
+   <!-- <bean id="standingCommitteereportreportpdf" class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"> 
+   <property name="url" value="/WEB-INF/reports/standingCommitteeReport.jrxml" /> 
+   </bean>
+ 
+ 	<bean id="standingCommitteereportreportxls" class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"> 
+   <property name="url" value="/WEB-INF/reports/standingCommitteeReport.jrxml" /> 
+   </bean>
+   
+   <bean id="standingCommitteereportreportcsv" class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"> 
+   <property name="url" value="/WEB-INF/reports/standingCommitteeReport.jrxml" /> 
+   </bean> -->
+   
+   
+   <!-- employee report -->
+   
+   <!--  <bean id="employeereportreportpdf" class="org.springframework.web.servlet.view.jasperreports.JasperReportsPdfView"> 
+   <property name="url" value="/WEB-INF/reports/employeeReport.jrxml" /> 
+   </bean>
+ 
+ 	<bean id="employeeereportreportxls" class="org.springframework.web.servlet.view.jasperreports.JasperReportsXlsView"> 
+   <property name="url" value="/WEB-INF/reports/employeeReport.jrxml" /> 
+   </bean>
+   
+   <bean id="employeereportreportcsv" class="org.springframework.web.servlet.view.jasperreports.JasperReportsCsvView"> 
+   <property name="url" value="/WEB-INF/reports/employeeReport.jrxml" /> 
+   </bean>  -->
+   
+   
+   
+   
+   
+   
+   
+</beans>

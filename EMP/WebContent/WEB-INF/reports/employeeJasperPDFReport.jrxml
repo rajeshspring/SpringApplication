@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Elected Member Report" language="java" pageWidth="2000" pageHeight="700" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="url" class="java.lang.String"/>
+	<parameter name="stateName" class="java.lang.String"/>
+	
+	
+	
+	<field name="name" class="java.lang.String"/>	
+	<field name="lastname" class="java.lang.String"/>	
+	<field name="address" class="java.lang.String"/>	
+	<field name="education" class="java.lang.String"/>
+	<field name="profile" class="java.lang.String"/>
+	<field name="phone" class="java.lang.String"/>
+	<field name="employeeType" class="java.lang.String"/>
+	<field name="email" class="java.lang.String"/>
+	
+	
+	
+	
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="-20" width="2000" height="92" forecolor="#FFFFFF" backcolor="#000000"/>
+				<staticText>
+					<reportElement x="0" y="20" width="2000" height="43" forecolor="#FFFFFF"/>
+					<textElement>
+						<font size="18" isBold="true"/>
+					</textElement>
+					<text><![CDATA[EMP (Employee Report)]]></text>
+				</staticText>
+									
+			</frame>
+			
+		</band>
+	</title>
+	<pageHeader>
+			<band height="25">	
+		
+		<textField>
+			   <reportElement mode="Opaque" x="0" y="5" width="2000" height="20" forecolor="#FFFFFF" backcolor="#666666"/>
+			   <textElement>
+				<font size="10" isBold="true"/>
+				</textElement>
+               <textFieldExpression><![CDATA[""]]></textFieldExpression>
+           </textField> 
+          </band>	
+	</pageHeader>
+	
+	 <columnHeader>
+		<band height="20" splitType="Stretch">
+		<frame>
+		<reportElement mode="Opaque" x="0" y="0" width="2000" height="20" forecolor="#B89F7D" backcolor="#CCCCCC"/>
+		
+		
+		<staticText>
+				<reportElement x="0" y="0" width="180" height="20"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[name]]></text>
+			</staticText>
+		
+		
+		  <staticText>
+				<reportElement x="95" y="0" width="180" height="20"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[lastname]]></text>
+			</staticText>
+			
+			<staticText>
+				<reportElement x="200" y="0" width="180" height="20"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[address]]></text>
+			</staticText>	
+				
+			
+			
+			<staticText>
+				<reportElement x="500" y="0" width="180" height="20"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[education]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="700" y="0" width="180" height="20"/>
+				<textElement>
+					<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[profile]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="950" y="0" width="180" height="20"/>
+				<textElement>
+				<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[phone]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1150" y="0" width="180" height="20"/>
+				<textElement>
+				<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[employeeType]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1400" y="0" width="180" height="20"/>
+				<textElement>
+				<font isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[email]]></text>
+			</staticText>			
+			
+			
+			</frame>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="2000" height="1"/>
+			</line>
+			
+			
+			<textField>
+				<reportElement x="0" y="0" width="180" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="2000" height="1"/>
+			</line>
+			
+			<textField>
+				<reportElement x="95" y="0" width="180" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{lastname}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="2000" height="1"/>
+			</line>
+			
+			<textField>
+				<reportElement x="200" y="0" width="180" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="2000" height="1"/>
+			</line>
+			
+			
+			
+			
+			
+			
+			
+			<textField>
+				<reportElement x="500" y="0" width="180" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{education}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="2000" height="1"/>
+			</line>
+			
+			
+			<textField>
+				<reportElement x="700" y="0" width="180" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{profile}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="2000" height="1"/>
+			</line>
+			
+			<textField>
+				<reportElement x="950" y="0" width="180" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{phone}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="2000" height="1"/>
+			</line>
+			
+			<textField>
+				<reportElement x="1150" y="0" width="180" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{employeeType}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="2000" height="1"/>
+			</line>
+			
+			
+			
+			
+			<textField>
+				<reportElement x="1400" y="0" width="180" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="2000" height="1"/>
+			</line>
+				
+	         </band>
+	         </detail>
+	
+	
+	
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band height="17">						
+			<textField>
+			   <reportElement mode="Opaque" x="0" y="4" width="2000" height="13" forecolor="#FFFFFF" backcolor="#666666"/>
+			   <textElement textAlignment="Center">
+				<font size="8" isBold="true"/>
+				</textElement>
+               <textFieldExpression><![CDATA["Report generated through Rajesh"+" "+$P{url} +" " +"on" +" "+ new java.util.Date().toString()]]></textFieldExpression>
+           </textField> 
+           <textField >
+			   <reportElement mode="Opaque" x="995" y="4" width="100" height="13" forecolor="#FFFFFF" backcolor="#666666"/>
+			   <textElement textAlignment="Right">
+				<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField >
+				<reportElement mode="Opaque" x="990" y="4" width="100" height="13" forecolor="#FFFFFF" backcolor="#666666"/>
+			   <textElement textAlignment="Right">
+				<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>          
+		</band>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

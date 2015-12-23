@@ -1,0 +1,5 @@
+INDEX VERSION 1.126
+D:\spring_workspace\EMP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2270146136.index
+\AngularScript\src
+D:\spring_workspace\EMP\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\866461911.index
+\DemoApplication\src
